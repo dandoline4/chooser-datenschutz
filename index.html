@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Chooser</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f6f9;
+    --card: #ffffff;
+    --ink: #121218;
+    --dim: #686878;
+    --accent: #ff4d6d;
+    --line: #dbdbe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0b0f;
+      --card: #18181f;
+      --ink: #f5f5f7;
+      --dim: #9898aa;
+      --line: #343442;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 ui-rounded, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          system-ui, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark {
+    width: 46px; height: 46px; border-radius: 14px; flex: none;
+    background: #0b0b0f; position: relative;
+  }
+  .mark::before, .mark::after {
+    content: ""; position: absolute; border-radius: 50%;
+  }
+  .mark::before {
+    inset: 9px; border: 3.5px solid #f5f5f7;
+  }
+  .mark::after {
+    width: 13px; height: 13px; background: var(--accent);
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+  }
+  h1 { font-size: 1.7rem; letter-spacing: -0.02em; margin: 0; }
+  h2 {
+    font-size: 1.15rem; letter-spacing: -0.01em;
+    margin: 32px 0 8px; padding-top: 20px; border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  .stand { color: var(--dim); font-size: 0.95rem; margin: 0 0 28px 60px; }
+  .lead {
+    background: var(--card); border-radius: 18px; padding: 18px 20px;
+    margin: 0 0 8px;
+  }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { color: var(--dim); font-size: 0.92rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <h1>Datenschutzerklärung</h1>
+  </header>
+  <p class="stand">Chooser · Stand: 11. September 2026</p>
+
+  <p class="lead">
+    <strong>Kurz gesagt:</strong> Chooser erhebt keine personenbezogenen Daten,
+    sendet nichts an Server und bindet keine Analyse- oder Werbedienste ein.
+    Alles, was du in der App eingibst, bleibt auf deinem Gerät.
+  </p>
+
+  <h2>Welche Daten die App speichert</h2>
+  <p>Ausschließlich lokal auf deinem Gerät, im geschützten Speicherbereich der
+  App:</p>
+  <ul>
+    <li><strong>Listen</strong>, die du anlegst — Namen, Optionen, Emojis</li>
+    <li><strong>Verlauf</strong> der letzten Ergebnisse</li>
+    <li><strong>Einstellungen</strong> wie Farbschema, Ton, Vibration und
+        Standardliste</li>
+    <li>ein <strong>laufendes Turnier</strong>, damit es einen Neustart
+        übersteht</li>
+  </ul>
+  <p>Diese Daten verlassen dein Gerät nicht. Sie werden nicht an uns und nicht
+  an Dritte übertragen. Wenn du die App löschst, werden sie mitgelöscht. In den
+  Einstellungen kannst du sie jederzeit selbst löschen („Alle Daten
+  löschen").</p>
+
+  <h2>Keine Netzwerkverbindung</h2>
+  <p>Die App stellt keine Verbindung zum Internet her. Sie funktioniert
+  vollständig offline.</p>
+
+  <h2>Berechtigungen</h2>
+  <p>Chooser fordert keine Systemberechtigungen an. Kein Zugriff auf Kontakte,
+  Fotos, Standort, Kamera oder Mikrofon.</p>
+  <p>Der Bewegungssensor wird für „Schütteln zum Würfeln" ausgelesen. iOS
+  verlangt dafür keine Berechtigung, und die Messwerte werden nur im Moment der
+  Bewegung ausgewertet, nirgends gespeichert und nirgends übertragen.</p>
+
+  <h2>Teilen-Funktion</h2>
+  <p>Wenn du ein Ergebnis über „Teilen" verschickst, übergibt Chooser den Text
+  an das Teilen-Fenster von iOS. Was danach damit passiert, bestimmst du mit der
+  App, die du dort auswählst — für deren Datenverarbeitung gilt deren eigene
+  Datenschutzerklärung.</p>
+
+  <h2>Während der Testphase (TestFlight)</h2>
+  <p>Wird die App über TestFlight verteilt, erhebt <strong>Apple</strong> als
+  Betreiber von TestFlight Nutzungs- und Absturzdaten und stellt sie dem
+  Entwickler in zusammengefasster Form bereit. Darauf hat der Entwickler dieser
+  App keinen Einfluss. Es gilt die
+  <a href="https://www.apple.com/legal/privacy/">Datenschutzerklärung von
+  Apple</a>.</p>
+
+  <h2>Kinder</h2>
+  <p>Die App richtet sich an kein bestimmtes Alter und erhebt von niemandem
+  Daten, also auch nicht von Kindern.</p>
+
+  <h2>Änderungen</h2>
+  <p>Sollte sich an dieser Erklärung etwas ändern, wird das Datum oben
+  angepasst.</p>
+
+  <h2>Kontakt</h2>
+  <p>Eric Zwick · <a href="mailto:ericc.zwickk@gmail.com">ericc.zwickk@gmail.com</a></p>
+
+  <footer>Chooser — offline und ohne Konto.</footer>
+</main>
+</body>
+</html>
